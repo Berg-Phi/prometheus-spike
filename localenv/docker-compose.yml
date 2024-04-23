@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  prometheus:
+    image: prom/prometheus
+    volumes:
+      - /Volumes/Workspace/codiceplastico/berg/prometheus/localenv/config/:/etc/prometheus/
+    ports:
+      - 9090:9090
+    restart: always

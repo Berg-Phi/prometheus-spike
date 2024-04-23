@@ -26,3 +26,4 @@
 /Volumes/Workspace/codiceplastico/berg/prometheus/bin/Debug/net8.0/Prometheus.NetStandard.dll
 /Volumes/Workspace/codiceplastico/berg/prometheus/obj/Debug/net8.0/prometheus.csproj.AssemblyReference.cache
 /Volumes/Workspace/codiceplastico/berg/prometheus/obj/Debug/net8.0/prometheus.csproj.CopyComplete
+/Volumes/Workspace/codiceplastico/berg/prometheus/obj/Debug/net8.0/prometheus.sourcelink.json

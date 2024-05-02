@@ -27,6 +27,9 @@ scrape_configs:
     label_name_length_limit: 210
     label_value_length_limit: 210
 
+    static_configs:
+      - targets: ["todo:1234"]
+
     metrics_path: /metrics
     scheme: http
 

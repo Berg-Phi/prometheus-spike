@@ -5,6 +5,23 @@ services:
     image: prom/prometheus
     volumes:
       - /Volumes/Workspace/codiceplastico/berg/prometheus/localenv/config/:/etc/prometheus/
+    command:
+      - "--storage.tsdb.retention.size=100MB"
+      - "--config.file=/etc/prometheus/prometheus.yml"
     ports:
       - 9090:9090
-    restart: always
+
+  todo:
+    container_name: todo
+    build:
+      context: ../
+      dockerfile: ./Dockerfile
+    ports:
+      - 1234:1234
+      - 8080:8080
+
+  grafana:
+    image: grafana/grafana
+    container_name: grafana
+    ports:
+      - "3003:3000"
